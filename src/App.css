@@ -1,0 +1,39 @@
+* {
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+.navbar {
+  background: #5133a4;
+  min-height: 70px;
+  position: fixed;
+  width: 100%;
+}
+
+header {
+  background-image: url("/images/folk-pattern-black.png");
+  background-repeat: repeat;
+  color: aliceblue;
+  padding: 80px 20px;
+  padding-bottom: 40px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.header>h1 {
+  margin: 0;
+  margin-bottom: 30px;
+  font-size: 4rem;
+  text-align: center;
+}
+
+.header>h2 {
+  display: block;
+  font-size: 1.5em;
+  margin-block-start: 0.83em;
+  margin-block-end: 0.83em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+  text-align: center;
+}
