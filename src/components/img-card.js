@@ -97,36 +97,20 @@ class Card extends Component {
     //     return randomURL;
     // };
 
-    shuffle() {
-        var imgUrls = [
-            "/images/img-1.jpg",
-            "/images/img-2.jpg",
-            "/images/img-3.jpg",
-            "/images/img-4.jpg",
-            "/images/img-5.jpg",
-            "/images/img-6.jpg",
-            "/images/img-7.jpg",
-            "/images/img-8.jpg",
-            "/images/img-9.jpg",
-            "/images/img-10.jpg",
-            "/images/img-11.jpg",
-            "/images/img-12.jpg",
-            "/images/img-13.jpg",
-            "/images/img-14.jpg",
-            "/images/img-15.jpg"
-        ];
+    shuffleArray(array) {
         var j, x, i;
-        for (i = imgUrls.length - 1; i > 0; i--) {
+        for (i = array.length - 1; i > 0; i--) {
             j = Math.floor(Math.random() * (i + 1));
-            x = imgUrls[i];
-            imgUrls[i] = imgUrls[j];
-            imgUrls[j] = x;
+            x = array[i];
+            array[i] = array[j];
+            array[j] = x;
         }
-        return imgUrls;
+        return array;
     };
 
     render() {
         // console.log(this.shuffle(imgUrls));
+        // this.shuffleArray(images); 
 
         return (
             this.images.map(result => <img src={result.imgUrl} id={result.id} key={result.id} alt="img" />)
